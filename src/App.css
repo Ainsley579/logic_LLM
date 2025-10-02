@@ -1,0 +1,81 @@
+.App {
+  /*text-align: center;*/
+  width: 100%;
+  height: 100%;
+  font-family: Lato, Sans-Serif, serif !important;
+}
+
+.headContainer {
+  height: 20px;
+  background-color: #fff;
+}
+
+.mainContainer {
+  min-height: 100vh;
+  background-color: #dee2e6 /*rgb(237, 239, 240)*/;
+}
+
+.vastContainer {
+  padding: 8px;
+}
+
+.logo {
+  float: left;
+  overflow: hidden;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  white-space: nowrap;
+  text-decoration: none;
+  margin-right: 24px;
+}
+
+/**
+* Below are the css for layout examples
+*/
+.detailPanel {
+  border-radius: 5px;
+  background: #fff;
+  min-height: 32vh;
+  overflow: scroll;
+}
+
+.hiddenComponent{
+  display: none;
+}
+
+/** Redefine card style features */
+.ant-card-head-title{
+  flex: none;
+}
+
+.ant-card-small > .ant-card-head > .ant-card-head-wrapper > .ant-card-head-title {
+  padding: 5px 0;
+}
+
+.ant-card-small > .ant-card-head > .ant-card-head-wrapper > .ant-card-extra{
+  padding: 0;
+  font-size: 0px;
+}
+
+.ant-slider-mark{
+  font-size: 10px;
+}
+
+.ant-card-small > .ant-card-body{
+  padding: 5px;
+}
+
+.ant-table.ant-table-small .ant-table-tbody > tr > td{
+  padding: 5px;
+}
+
+.ant-table.ant-table-small{
+  font-size: 12px;
+}
+
+.ant-list-item{
+  padding: 0;
+}
+
+

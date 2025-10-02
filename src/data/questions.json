@@ -1,0 +1,415 @@
+{
+  "general_training": [
+  {
+      "id": 0,
+      "type": "single_choice",
+      "isRequired": true,
+      "hasPicture": true,
+      "pictureURL": "/img/general_training/general_training_1.png",
+      "title": "What is highlighted in the figure?",
+      "choices": [{
+          "value": 0,
+          "text": "Legend",
+          "isAnswer": false
+      },{
+            "value": 1,
+            "text": "Map",
+            "isAnswer": false
+      },{
+            "value": 2,
+            "text": "Title",
+            "isAnswer": true
+      }]
+  },{
+      "id": 1,
+      "type": "single_choice",
+      "isRequired": true,
+      "hasPicture": true,
+      "pictureURL": "/img/general_training/general_training_2.png",
+      "title": "What is highlighted in the figure?",
+      "choices": [{
+          "value": 0,
+          "text": "Legend",
+          "isAnswer": true
+      },{
+            "value": 1,
+            "text": "Map",
+            "isAnswer": false
+      },{
+            "value": 2,
+            "text": "Title",
+            "isAnswer": false
+      }]
+  },{
+      "id": 2,
+      "type": "single_choice",
+      "isRequired": true,
+      "hasPicture": true,
+      "pictureURL": "/img/general_training/general_training_3.png",
+      "title": "What is highlighted in the figure?",
+      "choices": [{
+          "value": 0,
+          "text": "Legend",
+          "isAnswer": false
+      },{
+            "value": 1,
+            "text": "Map",
+            "isAnswer": true
+      },{
+            "value": 2,
+            "text": "Title",
+            "isAnswer": false
+      }]
+  }
+],
+  "survey_group_1": [
+    [
+      {
+        "id": 0,
+        "type": "slides",
+        "block": 1,
+        "data": "HE1",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/HE1.png"
+      },
+      {
+        "id": 1,
+        "type": "slides",
+        "block": 1,
+        "data": "EN2",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/EN2.png"
+      },
+      {
+        "id": 2,
+        "type": "slides",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
+      },
+      {
+        "id": 3,
+        "type": "slides",
+        "block": 1,
+        "data": "EC16",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/EC16.png"
+      },
+      {
+        "id": 4,
+        "type": "slides",
+        "block": 1,
+        "data": "HO17",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/HO17.png"
+      },
+      {
+        "id": 5,
+        "type": "slides",
+        "block": 1,
+        "data": "S12",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/S12.png"
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "type": "slides",
+        "block": 2,
+        "data": "HE13",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/HE13.png"
+      },
+      {
+        "id": 1,
+        "type": "slides",
+        "block": 2,
+        "data": "EN8",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/EN8.png"
+      },
+      {
+        "id": 2,
+        "type": "slides",
+        "block": 2,
+        "data": "C9",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C9.png"
+      },
+      {
+        "id": 3,
+        "type": "slides",
+        "block": 2,
+        "data": "EC10",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/EC10.png"
+      },
+      {
+        "id": 4,
+        "type": "slides",
+        "block": 2,
+        "data": "HO5",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/HO5.png"
+      },
+      {
+        "id": 5,
+        "type": "slides",
+        "block": 2,
+        "data": "S6",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/S6.png"
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "type": "slides",
+        "block": 3,
+        "data": "HE7",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/HE7.png"
+      },
+      {
+        "id": 1,
+        "type": "slides",
+        "block": 3,
+        "data": "EN14",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/EN14.png"
+      },
+      {
+        "id": 2,
+        "type": "slides",
+        "block": 3,
+        "data": "C3",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C3.png"
+      },
+      {
+        "id": 3,
+        "type": "slides",
+        "block": 3,
+        "data": "EC4",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/EC4.png"
+      },
+      {
+        "id": 4,
+        "type": "slides",
+        "block": 3,
+        "data": "HO11",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/HO11.png"
+      },
+      {
+        "id": 5,
+        "type": "slides",
+        "block": 3,
+        "data": "S18",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/S18.png"
+      }
+    ]
+  ],
+  "survey_group_2": [
+      [
+      {
+        "id": 0,
+        "type": "slides",
+        "block": 1,
+        "data": "HE1",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/HE1.png"
+      },
+      {
+        "id": 1,
+        "type": "slides",
+        "block": 1,
+        "data": "EN2",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/EN2.png"
+      },
+      {
+        "id": 2,
+        "type": "slides",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/C15.png"
+      },
+      {
+        "id": 3,
+        "type": "slides",
+        "block": 1,
+        "data": "EC16",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/EC16.png"
+      },
+      {
+        "id": 4,
+        "type": "slides",
+        "block": 1,
+        "data": "HO17",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/HO17.png"
+      },
+      {
+        "id": 5,
+        "type": "slides",
+        "block": 1,
+        "data": "S12",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/S12.png"
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "type": "slides",
+        "block": 2,
+        "data": "HE13",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/HE13.png"
+      },
+      {
+        "id": 1,
+        "type": "slides",
+        "block": 2,
+        "data": "EN8",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/EN8.png"
+      },
+      {
+        "id": 2,
+        "type": "slides",
+        "block": 2,
+        "data": "C9",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/C9.png"
+      },
+      {
+        "id": 3,
+        "type": "slides",
+        "block": 2,
+        "data": "EC10",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/EC10.png"
+      },
+      {
+        "id": 4,
+        "type": "slides",
+        "block": 2,
+        "data": "HO5",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/HO5.png"
+      },
+      {
+        "id": 5,
+        "type": "slides",
+        "block": 2,
+        "data": "S6",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/S6.png"
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "type": "slides",
+        "block": 3,
+        "data": "HE7",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/HE7.png"
+      },
+      {
+        "id": 1,
+        "type": "slides",
+        "block": 3,
+        "data": "EN14",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/EN14.png"
+      },
+      {
+        "id": 2,
+        "type": "slides",
+        "block": 3,
+        "data": "C3",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/C3.png"
+      },
+      {
+        "id": 3,
+        "type": "slides",
+        "block": 3,
+        "data": "EC4",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/EC4.png"
+      },
+      {
+        "id": 4,
+        "type": "slides",
+        "block": 3,
+        "data": "HO11",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/HO11.png"
+      },
+      {
+        "id": 5,
+        "type": "slides",
+        "block": 3,
+        "data": "S18",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group2/S18.png"
+      }
+    ]
+  ],
+  "demographic": [
+    {
+      "id": 0,
+      "type": "demographic",
+      "isRequired": true,
+      "hasPicture": false,
+      "pictureURL": "",
+      "title": ""
+    }
+  ]
+}

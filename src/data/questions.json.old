@@ -1,0 +1,1745 @@
+{
+    "general_training": [
+        {
+            "id": 0,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/general_training/general_training_1.png",
+            "title": "What is highlighted in the figure?",
+            "choices": [{
+                "value": 0,
+                "text": "Legend",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "Map",
+                  "isAnswer": false
+            },{
+                  "value": 2,
+                  "text": "Title",
+                  "isAnswer": true
+            }]
+        },{
+            "id": 1,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/general_training/general_training_2.png",
+            "title": "What is highlighted in the figure?",
+            "choices": [{
+                "value": 0,
+                "text": "Legend",
+                "isAnswer": true
+            },{
+                  "value": 1,
+                  "text": "Map",
+                  "isAnswer": false
+            },{
+                  "value": 2,
+                  "text": "Title",
+                  "isAnswer": false
+            }]
+        },{
+            "id": 2,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/general_training/general_training_3.png",
+            "title": "What is highlighted in the figure?",
+            "choices": [{
+                "value": 0,
+                "text": "Legend",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "Map",
+                  "isAnswer": true
+            },{
+                  "value": 2,
+                  "text": "Title",
+                  "isAnswer": false
+            }]
+        }
+    ],
+    "takeaway_training": [
+        {
+            "id": 0,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/takeaway_training/takeaway_training_no_uncertainty.png",
+            "title": "Based on the map shown above, select the takeaway that is NOT TRUE (there is ONLY ONE correct option):",
+            "choices": [{
+                "value": 0,
+                "text": "Vermont (VT) has one of the lowest populations in the USA",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "Texas (TX) has one of the lowest populations in the USA",
+                  "isAnswer": true
+            },{
+                  "value": 2,
+                  "text": "South Dakota (SD) has one of the lowest populations in the USA",
+                  "isAnswer": false
+            },{
+                  "value": 3,
+                  "text": "Delaware (DE) has one of the lowest populations in the USA",
+                  "isAnswer": false
+            }]
+        },{
+            "id": 1,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/takeaway_training/takeaway_training_no_uncertainty.png",
+            "title": "Based on the map shown above, select the takeaway that is NOT TRUE (there is ONLY ONE correct option):",
+            "choices": [{
+                "value": 0,
+                "text": "Ilinois (IL) has a higher population than Iowa (IA)",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "New York (NY) has a higher population than New Jersey (NJ)",
+                  "isAnswer": false
+            },{
+                  "value": 2,
+                  "text": "Nevada (NV) and Utah (UT) have similar populations",
+                  "isAnswer": false
+            },{
+                  "value": 3,
+                  "text": "Oregon (OR) has a higher population than California (CA)",
+                  "isAnswer": true
+            }]
+        }
+    ],
+    "uncertainty_training": [
+        {
+            "id": 0,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/uncertainty_training/uncertainty_training_1.png",
+            "title": "Based on the map shown above, identify the INCORRECT statement (there is ONLY ONE incorrect option):",
+            "choices": [{
+                "value": 0,
+                "text": "Michigan (MI) has low data uncertainty",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "New York (NY) has high data uncertainty",
+                  "isAnswer": true
+            },{
+                  "value": 2,
+                  "text": "Oklahoma (OK) has high data uncertainty",
+                  "isAnswer": false
+            },{
+                  "value": 3,
+                  "text": "Florida (FL) has moderate data uncertainty",
+                  "isAnswer": false
+            }]
+        },{
+            "id": 1,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/uncertainty_training/uncertainty_training_1.png",
+            "title": "Based on the map shown above, identify the INCORRECT statement (there is ONLY ONE incorrect option):",
+            "choices": [{
+                "value": 0,
+                "text": "North Carolina (NC) has low data uncertainty",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "Massachusetts (MA) has high data uncertainty",
+                  "isAnswer": false
+            },{
+                  "value": 2,
+                  "text": "Arizona (AZ) has high data uncertainty",
+                  "isAnswer": true
+            },{
+                  "value": 3,
+                  "text": "Pennsylvania (PA) has moderate data uncertainty",
+                  "isAnswer": false
+            }]
+        }
+    ],
+    "survey_group_1": [
+        [
+            {
+            "id": 0,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D1",
+            "task": 1,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group1/D1.png",
+            "attribute": "population rate with at least a bachelor's degree",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a high bachelor's degree attainment"
+            },{
+                "value": 1,
+                "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low bachelor's degree attainment"
+            },{
+                "value": 2,
+                "text": "The West North Central region (ND, SD, NE, KS, MO, IA, MN) generally has a higher bachelor's degree attainment rate than the East North Central region (WI, IL, IN, MI, OH)"
+            },{
+                "value": 3,
+                "text": "The East Coast (ME, NH, MA, RI, CT, NY, NJ, DE, MD) generally has a higher bachelor's degree attainment rate compared to the West Coast (WA, OR, CA)"
+            },{
+                "value": 4,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 1,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D2",
+            "task": 2,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group1/D2.png",
+            "attribute": "home broadband access rate",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "Arkansas (AR) has one of the lowest broadband access rates in the USA"
+            },{
+                "value": 1,
+                "text": "Alabama (AL) has one of the lowest broadband access rates in the USA"
+            },{
+                "value": 2,
+                "text": "Connecticut (CT) has one of the highest broadband access rates in the USA"
+            },{
+                "value": 3,
+                "text": "Rhode Island (RI) has one of the highest broadband access rates in the USA"
+            },{
+                "value": 4,
+                "text": "New Mexico (NM) has the lowest broadband access rate among the Western States (AZ, CO, ID, MT, NV, NM, UT, WY, CA, WA, OR)"
+            },{
+                "value": 5,
+                "text": "Utah (UT) has the highest broadband access rate in the Mountain West region (MT, ID, NV, UT, AZ, NM, CO, WY)"
+            },{
+                "value": 6,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 2,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D3",
+            "task": 2,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group1/D3.png",
+            "attribute": "farmer's market density",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "Nevada (NV) has one of the lowest farmer's market density in the USA"
+            },{
+                "value": 1,
+                "text": "Florida (FL) has one of the lowest farmers' market density in the USA"
+            },{
+                "value": 2,
+                "text": "Vermont (VT) has one of the highest farmers' market density in the USA"
+            },{
+                "value": 3,
+                "text": "North Dakota (ND) has one of the highest farmers' market density in the USA"
+            },{
+                "value": 4,
+                "text": "New Jersey (NJ) has the lowest farmers' market density in the Northeast (VT, NH, ME, MA, RI, CT, NJ, DE, NY, PA)"
+            },{
+                "value": 5,
+                "text": "North Dakota (ND) has the highest farmers' market density in the Midwest (ND, SD, NE, KS, MO, IA, MN, WI, IL, IN, MI, OH)"
+            },{
+                "value": 6,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 3,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D4",
+            "task": 3,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group1/D4.png",
+            "attribute": "apartment vacancy rates",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "North Dakota (ND) has a higher apartment vacancy rate than South Dakota (SD)"
+            },{
+                "value": 1,
+                "text": "South Carolina (SC) has a higher apartment vacancy rate than North Carolina (NC)"
+            },{
+                "value": 2,
+                "text": "Colorado (CO) has a higher apartment vacancy rate than Utah (UT)"
+            },{
+                "value": 3,
+                "text": "New York (NY) has a higher apartment vacancy rate than Massachusetts (MA)"
+            },{
+                "value": 4,
+                "text": "Minnesota (MN) and Wisconsin (WI) have similar apartment vacancy rates"
+            },{
+                "value": 5,
+                "text": "Oregon (OR) and Idaho (ID) have similar apartment vacancy rates"
+            },{
+                "value": 6,
+                "text": "Iowa (IA) and Illinois (IL) have similar apartment vacancy rates"
+            },{
+                "value": 7,
+                "text": "Missouri (MO) and Nebraska (NE) have similar apartment vacancy rates"
+            },{
+                "value": 8,
+                "text": "New Mexico (NM) and Texas (TX) have similar apartment vacancy rates"
+            },{
+                "value": 9,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 4,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D5",
+            "task": 3,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group1/D5.png",
+            "attribute": "unemployment rates",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "Arizona (AZ) has a higher unemployment rate than New Mexico (NM)"
+            },{
+                "value": 1,
+                "text": "Pennsylvania (PA) has a higher unemployment rate than New York (NY)"
+            },{
+                "value": 2,
+                "text": "Minnesota (MN) has a higher unemployment rate than Wisconsin (WI)"
+            },{
+                "value": 3,
+                "text": "Missouri (MO) has a higher unemployment rate than Kansas (KS)"
+            },{
+                "value": 4,
+                "text": "Vermont (VT) and New Hampshire (NH) have similar unemployment rates"
+            },{
+                "value": 5,
+                "text": "Montana (MT) and Wyoming (WY) have similar unemployment rates"
+            },{
+                "value": 6,
+                "text": "Tennessee (TN) and North Carolina (NC) have similar unemployment rates"
+            },{
+                "value": 7,
+                "text": "Washington (WA) and California (CA) have similar unemployment rates"
+            },{
+                "value": 8,
+                "text": "West Virginia (WV) and Mississippi (MS) have similar unemployment rates"
+            },{
+                "value": 9,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 5,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D6",
+            "task": 1,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group1/D6.png",
+            "attribute": "income per capita",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a high income per capita"
+            },{
+                "value": 1,
+                "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low income per capita"
+            },{
+                "value": 2,
+                "text": "Montana (MT) and Idaho (ID) have a lower income per capita than the rest of the Mountain West (NV, UT, CO, WY, AZ, NM)"
+            },{
+                "value": 3,
+                "text": "The Pacific West (WA, OR, CA) generally have a higher income per capita than the Mountain West (MT, ID, NV, UT, AZ, NM, CO, WY)"
+            },{
+                "value": 4,
+                "text": "None of the above"
+            }]
+        }
+        ], [
+            {
+                "id": 0,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D1",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D1.png",
+                "attribute": "population rate with at least a bachelor's degree",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Washington DC has a higher bachelor's degree attainment than Maryland (MD)"
+                },{
+                    "value": 1,
+                    "text": "New York (NY) has a higher bachelor's degree attainment than Pennsylvania (PA)"
+                },{
+                    "value": 2,
+                    "text": "South Carolina (SC) and North Carolina (NC) have similar bachelor's degree attainment"
+                },{
+                    "value": 3,
+                    "text": "Tennessee (TN) and Alabama (AL) have similar bachelor's degree attainment"
+                },{
+                    "value": 4,
+                    "text": "Arizona (AZ) has a higher bachelor's degree attainment than New Mexico (NM)"
+                },{
+                    "value": 5,
+                    "text": "California (CA) and Oregon (OR) have similar bachelor's degree attainment"
+                },{
+                    "value": 6,
+                    "text": "Colorado (CO) has a higher bachelor's degree attainment than Wyoming (WY)"
+                },{
+                    "value": 7,
+                    "text": "Vermont (VT) and New Hampshire (NH) have similar bachelor's degree attainment"
+                },{
+                    "value": 8,
+                    "text": "Massachusetts (MA) and Rhode Island (RI) have similar bachelor's degree attainment"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 1,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D2",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D2.png",
+                "attribute": "home broadband access rate",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a high proportion of homes with broadband access"
+                },{
+                    "value": 1,
+                    "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low proportion of homes with broadband access"
+                },{
+                    "value": 2,
+                    "text": "Minnesota (MN), and Iowa (IA) have a higher proportion of homes with broadband access compared to the rest of the West North Central region (ND, SD, NE, KS, MO)"
+                },{
+                    "value": 3,
+                    "text": "The West Coast (WA, OR, CA) has a higher proportion of homes with broadband access than Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL)"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 2,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D3",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D3.png",
+                "attribute": "farmer's market density",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low farmers' market density"
+                },{
+                    "value": 1,
+                    "text": "The regions with the high farmers' market density in the USA are spread across the Northeast (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) and the Midwest (ND, SD, NE, MO, WI, MN, IA, IL, IN, OH, KS)."
+                },{
+                    "value": 2,
+                    "text": "The East Coast (ME, NH, MA, RI, CT, NY, NJ, DE, MD) generally has a higher farmers' market density compared to the West Coast (WA, OR, CA)"
+                },{
+                    "value": 3,
+                    "text": "The West North Central region (ND, SD, NE, KS, MO, IA, MN) generally has a higher farmers' market density than the East North Central region (WI, IL, IN, MI, OH)"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 3,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D4",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D4.png",
+                "attribute": "apartment vacancy rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Massachusetts (MA) has one of the lowest apartment vacancy rates in the USA"
+                },{
+                    "value": 1,
+                    "text": "California (CA) has one of the lowest apartment vacancy rates in the USA"
+                },{
+                    "value": 2,
+                    "text": "Texas (TX) has one of the highest apartment vacancy rates in the USA"
+                },{
+                    "value": 3,
+                    "text": "North Dakota (ND) has one of the highest apartment vacancy rates in the USA"
+                },{
+                    "value": 4,
+                    "text": "Minnesota (MN) has the lowest apartment vacancy rate in the West North Central region (ND, SD, NE, KS, MO, IA, MN)"
+                },{
+                    "value": 5,
+                    "text": "New Mexico (NM) has the highest apartment vacancy rate among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 4,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D5",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D5.png",
+                "attribute": "unemployment rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Vermont (VT) has one of the lowest unemployment rates in the USA"
+                },{
+                    "value": 1,
+                    "text": "Virginia (VA) has one of the lowest unemployment rates in the USA"
+                },{
+                    "value": 2,
+                    "text": "Mississippi (MS) has one of the highest unemployment rates in the USA"
+                },{
+                    "value": 3,
+                    "text": "West Virginia (WV) has one of the highest unemployment rates in the USA"
+                },{
+                    "value": 4,
+                    "text": "Arizona (AZ) has the highest unemployment rate among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 5,
+                    "text": "Colorado (CO) has the lowest unemployment rate among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 5,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D6",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D6.png",
+                "attribute": "income per capita",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Washington DC has a higher per capita income than Maryland (MD)"
+                },{
+                    "value": 1,
+                    "text": "Washington (WA) has a higher per capita income than Oregon (OR)"
+                },{
+                    "value": 2,
+                    "text": "Illinois (IL) has a higher per capita income than Indiana (IN)"
+                },{
+                    "value": 3,
+                    "text": "North Carolina (NC) has a higher per capita income than South Carolina (SC)"
+                },{
+                    "value": 4,
+                    "text": "Kentucky (KY) and Tennessee (TN) have similar per capita income"
+                },{
+                    "value": 5,
+                    "text": "Arizona (AZ) and New Mexico (NM) have similar per capita income"
+                },{
+                    "value": 6,
+                    "text": "Virginia (VA) and Delaware (DE) have similar per capita income"
+                },{
+                    "value": 7,
+                    "text": "New Jersey (NJ) and Connecticut (CT) have similar per capita income"
+                },{
+                    "value": 8,
+                    "text": "New York (NY) has a higher per capita income than Pennsylvania (PA)"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            }
+        ], [
+            {
+                "id": 0,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D1",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D1.png",
+                "attribute": "population rate with at least a bachelor's degree",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Nevada (NV) has one of the lowest bachelor's degree attainment in the USA"
+                },{
+                    "value": 1,
+                    "text": "Tennesee (TN) has one of the lowest bachelor's degree attainment in the USA"
+                },{
+                    "value": 2,
+                    "text": "Massachusetts (MA) has one of the highest bachelor's degree attainment in the USA"
+                },{
+                    "value": 3,
+                    "text": "New Jersey (NJ) has one of the highest bachelor's degree attainment in the USA"
+                },{
+                    "value": 4,
+                    "text": "Missouri (MO) has the lowest bachelor's degree attainment in the Midwest (ND, SD, NE, KS, MO, IA, MN, WI, IL, IN, MI, OH)"
+                },{
+                    "value": 5,
+                    "text": "Colorado (CO) has the highest bachelor's degree attainment in the Mountain West region (MT, ID, NV, UT, AZ, NM, CO, WY)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 1,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D2",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D2.png",
+                "attribute": "home broadband access rate",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Washington (WA) has a higher broadband access rate than Oregon (OR)"
+                },{
+                    "value": 1,
+                    "text": "Ohio (OH) has a higher broadband access rate than Indiana (IN)"
+                },{
+                    "value": 2,
+                    "text": "Kansas (KS) has a higher broadband access rate than Oklahoma (OK)"
+                },{
+                    "value": 3,
+                    "text": "Georgia (GA) has a higher broadband access rate than Alabama (AL)"
+                },{
+                    "value": 4,
+                    "text": "Arkansas (AR) and Louisiana (LA) have similar broadband access rates"
+                },{
+                    "value": 5,
+                    "text": "Kentucky (KY) and Tennessee (TN) have similar broadband access rates"
+                },{
+                    "value": 6,
+                    "text": "Montana (MT) and North Dakota (ND) have similar broadband access rates"
+                },{
+                    "value": 7,
+                    "text": "New York (NY) and Pennsylvania (PA) have similar broadband access rates"
+                },{
+                    "value": 8,
+                    "text": "Massachusetts (MA) and Rhode Island (RI) have similar broadband access rates"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 2,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D3",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D3.png",
+                "attribute": "farmer's market density",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Vermont (VT) has a higher farmers' market density than New Hampshire (NH)"
+                },{
+                    "value": 1,
+                    "text": "Montana (MT) has a higher farmers' market density than Idaho (ID)"
+                },{
+                    "value": 2,
+                    "text": "West Virginia (WV) has a higher farmers' market density than Kentucky (KY)"
+                },{
+                    "value": 3,
+                    "text": "Alabama (AL) has a higher farmers' market density than Georgia (GA)"
+                },{
+                    "value": 4,
+                    "text": "Nevada (NV) and Utah (UT) have similar farmers' market densities"
+                },{
+                    "value": 5,
+                    "text": "Indiana (IN) and Illinois (IL) have similar farmers' market density"
+                },{
+                    "value": 6,
+                    "text": "Kansas (KS) and Missouri (MO) have similar farmers' market densities"
+                },{
+                    "value": 7,
+                    "text": "Nebraska (NE) and Iowa (IA) have similar farmers' market densities"
+                },{
+                    "value": 8,
+                    "text": "Oregon (OR) has a higher farmers' market density than Washington (WA)"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 3,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D4",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D4.png",
+                "attribute": "apartment vacancy rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a low apartment vacancy rate"
+                },{
+                    "value": 1,
+                    "text": "Wisconsin (WI), Minnesota (MN), and Michigan (MI) have a lower apartment vacancy rate than the rest of the Midwest (ND, SD, NE, MO, IA, IL, IN, OH, KS)"
+                },{
+                    "value": 2,
+                    "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a high apartment vacancy rate"
+                },{
+                    "value": 3,
+                    "text": "The West Coast (WA, OR, CA) and the East Coast (ME, NH, MA, RI, CT, NY, NJ, DE, MD) generally have lower apartment vacancy rates than other parts of the country"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 4,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D5",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D5.png",
+                "attribute": "unemployment rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Vermont (VT), New Hampshire (NH), and Maine (ME) have a lower unemployment rate than the rest of the Northeast and Mid-Atlantic (MA, RI, CT, NJ, DE, MD, DC, NY, PA)"
+                },{
+                    "value": 1,
+                    "text": "Arizona (AZ) and New Mexico (NM) have a higher unemployment rate than the rest of the Mountain West (MT, ID, NV, UT, CO, WY)"
+                },{
+                    "value": 2,
+                    "text": "The East North Central region (WI, IL, IN, MI, OH) generally has a higher unemployment rate than the West North Central region (ND, SD, NE, KS, MO, IA, MN)"
+                },{
+                    "value": 3,
+                    "text": "Mississippi (MS), Kentucky (KY), and West Virginia (WV) have a higher unemployment rate than the rest of the Southern States (TN, AL, GA, LA, AR, TX, OK, NC, SC, FL)"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 5,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D6",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/D6.png",
+                "attribute": "income per capita",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Oklahoma (OK) has one of the lowest per capita incomes in the USA"
+                },{
+                    "value": 1,
+                    "text": "Montana (MT) has one of the lowest per capita incomes in the USA"
+                },{
+                    "value": 2,
+                    "text": "Massachusetts (MA) has one of the highest per capita incomes in the USA"
+                },{
+                    "value": 3,
+                    "text": "Washington DC (DC) has one of the highest per capita incomes in the USA"
+                },{
+                    "value": 4,
+                    "text": "South Dakota (SD) has the lowest income per capita in the West North Central region (ND, SD, NE, KS, MO, IA, MN)"
+                },{
+                    "value": 5,
+                    "text": "Colorado (CO) has the highest income per capita among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            }
+        ]
+    ],
+    "survey_group_2": [
+        [
+            {
+            "id": 0,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D1",
+            "task": 1,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group2/D1.png",
+            "attribute": "population rate with at least a bachelor's degree",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a high bachelor's degree attainment"
+            },{
+                "value": 1,
+                "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low bachelor's degree attainment"
+            },{
+                "value": 2,
+                "text": "The West North Central region (ND, SD, NE, KS, MO, IA, MN) generally has a higher bachelor's degree attainment rate than the East North Central region (WI, IL, IN, MI, OH)"
+            },{
+                "value": 3,
+                "text": "The East Coast (ME, NH, MA, RI, CT, NY, NJ, DE, MD) generally has a higher bachelor's degree attainment rate compared to the West Coast (WA, OR, CA)"
+            },{
+                "value": 4,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 1,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D2",
+            "task": 2,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group2/D2.png",
+            "attribute": "home broadband access rate",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "Arkansas (AR) has one of the lowest broadband access rates in the USA"
+            },{
+                "value": 1,
+                "text": "Alabama (AL) has one of the lowest broadband access rates in the USA"
+            },{
+                "value": 2,
+                "text": "Connecticut (CT) has one of the highest broadband access rates in the USA"
+            },{
+                "value": 3,
+                "text": "Rhode Island (RI) has one of the highest broadband access rates in the USA"
+            },{
+                "value": 4,
+                "text": "New Mexico (NM) has the lowest broadband access rate among the Western States (AZ, CO, ID, MT, NV, NM, UT, WY, CA, WA, OR)"
+            },{
+                "value": 5,
+                "text": "Utah (UT) has the highest broadband access rate in the Mountain West region (MT, ID, NV, UT, AZ, NM, CO, WY)"
+            },{
+                "value": 6,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 2,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D3",
+            "task": 2,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group2/D3.png",
+            "attribute": "farmer's market density",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "Nevada (NV) has one of the lowest farmer's market density in the USA"
+            },{
+                "value": 1,
+                "text": "Florida (FL) has one of the lowest farmers' market density in the USA"
+            },{
+                "value": 2,
+                "text": "Vermont (VT) has one of the highest farmers' market density in the USA"
+            },{
+                "value": 3,
+                "text": "North Dakota (ND) has one of the highest farmers' market density in the USA"
+            },{
+                "value": 4,
+                "text": "New Jersey (NJ) has the lowest farmers' market density in the Northeast (VT, NH, ME, MA, RI, CT, NJ, DE, NY, PA)"
+            },{
+                "value": 5,
+                "text": "North Dakota (ND) has the highest farmers' market density in the Midwest (ND, SD, NE, KS, MO, IA, MN, WI, IL, IN, MI, OH)"
+            },{
+                "value": 6,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 3,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D4",
+            "task": 3,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group2/D4.png",
+            "attribute": "apartment vacancy rates",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "North Dakota (ND) has a higher apartment vacancy rate than South Dakota (SD)"
+            },{
+                "value": 1,
+                "text": "South Carolina (SC) has a higher apartment vacancy rate than North Carolina (NC)"
+            },{
+                "value": 2,
+                "text": "Colorado (CO) has a higher apartment vacancy rate than Utah (UT)"
+            },{
+                "value": 3,
+                "text": "New York (NY) has a higher apartment vacancy rate than Massachusetts (MA)"
+            },{
+                "value": 4,
+                "text": "Minnesota (MN) and Wisconsin (WI) have similar apartment vacancy rates"
+            },{
+                "value": 5,
+                "text": "Oregon (OR) and Idaho (ID) have similar apartment vacancy rates"
+            },{
+                "value": 6,
+                "text": "Iowa (IA) and Illinois (IL) have similar apartment vacancy rates"
+            },{
+                "value": 7,
+                "text": "Missouri (MO) and Nebraska (NE) have similar apartment vacancy rates"
+            },{
+                "value": 8,
+                "text": "New Mexico (NM) and Texas (TX) have similar apartment vacancy rates"
+            },{
+                "value": 9,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 4,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D5",
+            "task": 3,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group2/D5.png",
+            "attribute": "unemployment rates",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "Arizona (AZ) has a higher unemployment rate than New Mexico (NM)"
+            },{
+                "value": 1,
+                "text": "Pennsylvania (PA) has a higher unemployment rate than New York (NY)"
+            },{
+                "value": 2,
+                "text": "Minnesota (MN) has a higher unemployment rate than Wisconsin (WI)"
+            },{
+                "value": 3,
+                "text": "Missouri (MO) has a higher unemployment rate than Kansas (KS)"
+            },{
+                "value": 4,
+                "text": "Vermont (VT) and New Hampshire (NH) have similar unemployment rates"
+            },{
+                "value": 5,
+                "text": "Montana (MT) and Wyoming (WY) have similar unemployment rates"
+            },{
+                "value": 6,
+                "text": "Tennessee (TN) and North Carolina (NC) have similar unemployment rates"
+            },{
+                "value": 7,
+                "text": "Washington (WA) and California (CA) have similar unemployment rates"
+            },{
+                "value": 8,
+                "text": "West Virginia (WV) and Mississippi (MS) have similar unemployment rates"
+            },{
+                "value": 9,
+                "text": "None of the above"
+            }]
+        },{
+            "id": 5,
+            "type": "takeaways",
+            "block": 1,
+            "data": "D6",
+            "task": 1,
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/group2/D6.png",
+            "attribute": "income per capita",
+            "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+            "choices": [{
+                "value": 0,
+                "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a high income per capita"
+            },{
+                "value": 1,
+                "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low income per capita"
+            },{
+                "value": 2,
+                "text": "Montana (MT) and Idaho (ID) have a lower income per capita than the rest of the Mountain West (NV, UT, CO, WY, AZ, NM)"
+            },{
+                "value": 3,
+                "text": "The Pacific West (WA, OR, CA) generally have a higher income per capita than the Mountain West (MT, ID, NV, UT, AZ, NM, CO, WY)"
+            },{
+                "value": 4,
+                "text": "None of the above"
+            }]
+        }
+        ], [
+            {
+                "id": 0,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D1",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D1.png",
+                "attribute": "population rate with at least a bachelor's degree",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Washington DC has a higher bachelor's degree attainment than Maryland (MD)"
+                },{
+                    "value": 1,
+                    "text": "New York (NY) has a higher bachelor's degree attainment than Pennsylvania (PA)"
+                },{
+                    "value": 2,
+                    "text": "South Carolina (SC) and North Carolina (NC) have similar bachelor's degree attainment"
+                },{
+                    "value": 3,
+                    "text": "Tennessee (TN) and Alabama (AL) have similar bachelor's degree attainment"
+                },{
+                    "value": 4,
+                    "text": "Arizona (AZ) has a higher bachelor's degree attainment than New Mexico (NM)"
+                },{
+                    "value": 5,
+                    "text": "California (CA) and Oregon (OR) have similar bachelor's degree attainment"
+                },{
+                    "value": 6,
+                    "text": "Colorado (CO) has a higher bachelor's degree attainment than Wyoming (WY)"
+                },{
+                    "value": 7,
+                    "text": "Vermont (VT) and New Hampshire (NH) have similar bachelor's degree attainment"
+                },{
+                    "value": 8,
+                    "text": "Massachusetts (MA) and Rhode Island (RI) have similar bachelor's degree attainment"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 1,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D2",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D2.png",
+                "attribute": "home broadband access rate",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a high proportion of homes with broadband access"
+                },{
+                    "value": 1,
+                    "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low proportion of homes with broadband access"
+                },{
+                    "value": 2,
+                    "text": "Minnesota (MN), and Iowa (IA) have a higher proportion of homes with broadband access compared to the rest of the West North Central region (ND, SD, NE, KS, MO)"
+                },{
+                    "value": 3,
+                    "text": "The West Coast (WA, OR, CA) has a higher proportion of homes with broadband access than Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL)"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 2,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D3",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D3.png",
+                "attribute": "farmer's market density",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a low farmers' market density"
+                },{
+                    "value": 1,
+                    "text": "The regions with the high farmers' market density in the USA are spread across the Northeast (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) and the Midwest (ND, SD, NE, MO, WI, MN, IA, IL, IN, OH, KS)."
+                },{
+                    "value": 2,
+                    "text": "The East Coast (ME, NH, MA, RI, CT, NY, NJ, DE, MD) generally has a higher farmers' market density compared to the West Coast (WA, OR, CA)"
+                },{
+                    "value": 3,
+                    "text": "The West North Central region (ND, SD, NE, KS, MO, IA, MN) generally has a higher farmers' market density than the East North Central region (WI, IL, IN, MI, OH)"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 3,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D4",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D4.png",
+                "attribute": "apartment vacancy rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Massachusetts (MA) has one of the lowest apartment vacancy rates in the USA"
+                },{
+                    "value": 1,
+                    "text": "California (CA) has one of the lowest apartment vacancy rates in the USA"
+                },{
+                    "value": 2,
+                    "text": "Texas (TX) has one of the highest apartment vacancy rates in the USA"
+                },{
+                    "value": 3,
+                    "text": "North Dakota (ND) has one of the highest apartment vacancy rates in the USA"
+                },{
+                    "value": 4,
+                    "text": "Minnesota (MN) has the lowest apartment vacancy rate in the West North Central region (ND, SD, NE, KS, MO, IA, MN)"
+                },{
+                    "value": 5,
+                    "text": "New Mexico (NM) has the highest apartment vacancy rate among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 4,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D5",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D5.png",
+                "attribute": "unemployment rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Vermont (VT) has one of the lowest unemployment rates in the USA"
+                },{
+                    "value": 1,
+                    "text": "Virginia (VA) has one of the lowest unemployment rates in the USA"
+                },{
+                    "value": 2,
+                    "text": "Mississippi (MS) has one of the highest unemployment rates in the USA"
+                },{
+                    "value": 3,
+                    "text": "West Virginia (WV) has one of the highest unemployment rates in the USA"
+                },{
+                    "value": 4,
+                    "text": "Arizona (AZ) has the highest unemployment rate among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 5,
+                    "text": "Colorado (CO) has the lowest unemployment rate among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 5,
+                "type": "takeaways",
+                "block": 2,
+                "data": "D6",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D6.png",
+                "attribute": "income per capita",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Washington DC has a higher per capita income than Maryland (MD)"
+                },{
+                    "value": 1,
+                    "text": "Washington (WA) has a higher per capita income than Oregon (OR)"
+                },{
+                    "value": 2,
+                    "text": "Illinois (IL) has a higher per capita income than Indiana (IN)"
+                },{
+                    "value": 3,
+                    "text": "North Carolina (NC) has a higher per capita income than South Carolina (SC)"
+                },{
+                    "value": 4,
+                    "text": "Kentucky (KY) and Tennessee (TN) have similar per capita income"
+                },{
+                    "value": 5,
+                    "text": "Arizona (AZ) and New Mexico (NM) have similar per capita income"
+                },{
+                    "value": 6,
+                    "text": "Virginia (VA) and Delaware (DE) have similar per capita income"
+                },{
+                    "value": 7,
+                    "text": "New Jersey (NJ) and Connecticut (CT) have similar per capita income"
+                },{
+                    "value": 8,
+                    "text": "New York (NY) has a higher per capita income than Pennsylvania (PA)"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            }
+        ], [
+            {
+                "id": 0,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D1",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D1.png",
+                "attribute": "population rate with at least a bachelor's degree",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Nevada (NV) has one of the lowest bachelor's degree attainment in the USA"
+                },{
+                    "value": 1,
+                    "text": "Tennesee (TN) has one of the lowest bachelor's degree attainment in the USA"
+                },{
+                    "value": 2,
+                    "text": "Massachusetts (MA) has one of the highest bachelor's degree attainment in the USA"
+                },{
+                    "value": 3,
+                    "text": "New Jersey (NJ) has one of the highest bachelor's degree attainment in the USA"
+                },{
+                    "value": 4,
+                    "text": "Missouri (MO) has the lowest bachelor's degree attainment in the Midwest (ND, SD, NE, KS, MO, IA, MN, WI, IL, IN, MI, OH)"
+                },{
+                    "value": 5,
+                    "text": "Colorado (CO) has the highest bachelor's degree attainment in the Mountain West region (MT, ID, NV, UT, AZ, NM, CO, WY)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 1,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D2",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D2.png",
+                "attribute": "home broadband access rate",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Washington (WA) has a higher broadband access rate than Oregon (OR)"
+                },{
+                    "value": 1,
+                    "text": "Ohio (OH) has a higher broadband access rate than Indiana (IN)"
+                },{
+                    "value": 2,
+                    "text": "Kansas (KS) has a higher broadband access rate than Oklahoma (OK)"
+                },{
+                    "value": 3,
+                    "text": "Georgia (GA) has a higher broadband access rate than Alabama (AL)"
+                },{
+                    "value": 4,
+                    "text": "Arkansas (AR) and Louisiana (LA) have similar broadband access rates"
+                },{
+                    "value": 5,
+                    "text": "Kentucky (KY) and Tennessee (TN) have similar broadband access rates"
+                },{
+                    "value": 6,
+                    "text": "Montana (MT) and North Dakota (ND) have similar broadband access rates"
+                },{
+                    "value": 7,
+                    "text": "New York (NY) and Pennsylvania (PA) have similar broadband access rates"
+                },{
+                    "value": 8,
+                    "text": "Massachusetts (MA) and Rhode Island (RI) have similar broadband access rates"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 2,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D3",
+                "task": 3,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D3.png",
+                "attribute": "farmer's market density",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Vermont (VT) has a higher farmers' market density than New Hampshire (NH)"
+                },{
+                    "value": 1,
+                    "text": "Montana (MT) has a higher farmers' market density than Idaho (ID)"
+                },{
+                    "value": 2,
+                    "text": "West Virginia (WV) has a higher farmers' market density than Kentucky (KY)"
+                },{
+                    "value": 3,
+                    "text": "Alabama (AL) has a higher farmers' market density than Georgia (GA)"
+                },{
+                    "value": 4,
+                    "text": "Nevada (NV) and Utah (UT) have similar farmers' market densities"
+                },{
+                    "value": 5,
+                    "text": "Indiana (IN) and Illinois (IL) have similar farmers' market density"
+                },{
+                    "value": 6,
+                    "text": "Kansas (KS) and Missouri (MO) have similar farmers' market densities"
+                },{
+                    "value": 7,
+                    "text": "Nebraska (NE) and Iowa (IA) have similar farmers' market densities"
+                },{
+                    "value": 8,
+                    "text": "Oregon (OR) has a higher farmers' market density than Washington (WA)"
+                },{
+                    "value": 9,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 3,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D4",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D4.png",
+                "attribute": "apartment vacancy rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "The Northeast and Mid-Atlantic (VT, NH, ME, MA, RI, CT, NJ, DE, MD, DC, NY, PA) generally have a low apartment vacancy rate"
+                },{
+                    "value": 1,
+                    "text": "Wisconsin (WI), Minnesota (MN), and Michigan (MI) have a lower apartment vacancy rate than the rest of the Midwest (ND, SD, NE, MO, IA, IL, IN, OH, KS)"
+                },{
+                    "value": 2,
+                    "text": "Southern states (WV, KY, TN, MS, AL, GA, LA, AR, TX, OK, NC, SC, FL) generally have a high apartment vacancy rate"
+                },{
+                    "value": 3,
+                    "text": "The West Coast (WA, OR, CA) and the East Coast (ME, NH, MA, RI, CT, NY, NJ, DE, MD) generally have lower apartment vacancy rates than other parts of the country"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 4,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D5",
+                "task": 1,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D5.png",
+                "attribute": "unemployment rates",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Vermont (VT), New Hampshire (NH), and Maine (ME) have a lower unemployment rate than the rest of the Northeast and Mid-Atlantic (MA, RI, CT, NJ, DE, MD, DC, NY, PA)"
+                },{
+                    "value": 1,
+                    "text": "Arizona (AZ) and New Mexico (NM) have a higher unemployment rate than the rest of the Mountain West (MT, ID, NV, UT, CO, WY)"
+                },{
+                    "value": 2,
+                    "text": "The East North Central region (WI, IL, IN, MI, OH) generally has a higher unemployment rate than the West North Central region (ND, SD, NE, KS, MO, IA, MN)"
+                },{
+                    "value": 3,
+                    "text": "Mississippi (MS), Kentucky (KY), and West Virginia (WV) have a higher unemployment rate than the rest of the Southern States (TN, AL, GA, LA, AR, TX, OK, NC, SC, FL)"
+                },{
+                    "value": 4,
+                    "text": "None of the above"
+                }]
+            },{
+                "id": 5,
+                "type": "takeaways",
+                "block": 3,
+                "data": "D6",
+                "task": 2,
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group2/D6.png",
+                "attribute": "income per capita",
+                "title": "Which of the following takeaways are likely to be true based on the information presented in the map?",
+                "choices": [{
+                    "value": 0,
+                    "text": "Oklahoma (OK) has one of the lowest per capita incomes in the USA"
+                },{
+                    "value": 1,
+                    "text": "Montana (MT) has one of the lowest per capita incomes in the USA"
+                },{
+                    "value": 2,
+                    "text": "Massachusetts (MA) has one of the highest per capita incomes in the USA"
+                },{
+                    "value": 3,
+                    "text": "Washington DC (DC) has one of the highest per capita incomes in the USA"
+                },{
+                    "value": 4,
+                    "text": "South Dakota (SD) has the lowest income per capita in the West North Central region (ND, SD, NE, KS, MO, IA, MN)"
+                },{
+                    "value": 5,
+                    "text": "Colorado (CO) has the highest income per capita among the Mountain West states (MT, ID, NV, UT, WY, CO, NM)"
+                },{
+                    "value": 6,
+                    "text": "None of the above"
+                }]
+            }
+        ]
+    ],
+    "vlat": [
+        {
+            "id": 0,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat1.png",
+            "title": "eBay is nested in the Software category",
+            "choices": [{
+                "value": 0,
+                "text": "True",
+                "isAnswer": false
+            },{
+                  "value": 1,
+                  "text": "False",
+                  "isAnswer": true
+            },{
+                "value": 2,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 1,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat2.png",
+            "title": "Which country has the lowest proportion of Gold medals?",
+            "choices": [{
+                "value": 0,
+                "text": "Great Britain",
+                "isAnswer": true
+            },{
+                "value": 1,
+                "text": "USA",
+                "isAnswer": false
+            },{
+                "value": 2,
+                "text": "Japan",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "Australia",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 2,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat3.png",
+            "title": "What distance have customers traveled in the taxi the most",
+            "choices": [{
+                "value": 0,
+                "text": "60 - 70 km",
+                "isAnswer": false
+            },{
+                "value": 1,
+                "text": "30 - 40 km",
+                "isAnswer": false
+            },{
+                "value": 2,
+                "text": "20 - 30 km",
+                "isAnswer": true
+            },{
+                "value": 3,
+                "text": "50 - 60 km",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 3,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat4.png",
+            "title": "In 2020, the unemployment rate for Washington (WA) was higher than that of Wisconsin (WI)?",
+            "choices": [{
+                "value": 0,
+                "text": "True",
+                "isAnswer": true
+            },{
+                "value": 1,
+                "text": "False",
+                "isAnswer": false
+            },{
+                "value": 2,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 4,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat5.png",
+            "title": "What is the approximate global smartphone market share of Samsung?",
+            "choices": [{
+                "value": 0,
+                "text": "17.6%",
+                "isAnswer": true
+            },{
+                "value": 1,
+                "text": "25.3%",
+                "isAnswer": false
+            },{
+                "value": 2,
+                "text": "10.9%",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "35.2%",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 5,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat6.png",
+            "title": "Which city's metro system has the largest number of stations?",
+            "choices": [{
+                "value": 0,
+                "text": "Beijing",
+                "isAnswer": false
+            },{
+                "value": 1,
+                "text": "Shanghai",
+                "isAnswer": true
+            },{
+                "value": 2,
+                "text": "London",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "Seoul",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 6,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat7.png",
+            "title": "What is the cost of peanuts in Seoul?",
+            "choices": [{
+                "value": 0,
+                "text": "$5.2",
+                "isAnswer": false
+            },{
+                "value": 1,
+                "text": "$6.1",
+                "isAnswer": true
+            },{
+                "value": 2,
+                "text": "$7.5",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "$4.5",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 7,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat8.png",
+            "title": "What was the price of a barrel of oil in February 2020?",
+            "choices": [{
+                "value": 0,
+                "text": "$50.54",
+                "isAnswer": true
+            },{
+                "value": 1,
+                "text": "$47.02",
+                "isAnswer": false
+            },{
+                "value": 2,
+                "text": "$42.34",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "$43.48",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 8,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat9.png",
+            "title": "What is the average internet speed in Japan?",
+            "choices": [{
+                "value": 0,
+                "text": "42.30 Mbps",
+                "isAnswer": false
+            },{
+                "value": 1,
+                "text": "40.51 Mbps",
+                "isAnswer": true
+            },{
+                "value": 2,
+                "text": "35.25 Mbps",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "16.16 Mbps",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 9,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat10.png",
+            "title": "What was the average price of a pound of coffee in October 2019?",
+            "choices": [{
+                "value": 0,
+                "text": "$0.71",
+                "isAnswer": true
+            },{
+                "value": 1,
+                "text": "$0.90",
+                "isAnswer": false
+            },{
+                "value": 2,
+                "text": "$0.80",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "$0.63",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 10,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat11.png",
+            "title": "What was the ratio of girls named 'Isla' to girls named 'Amelia' in 2012 in the UK?",
+            "choices": [{
+                "value": 0,
+                "text": "1 to 1",
+                "isAnswer": false
+            },{
+                "value": 1,
+                "text": "1 to 2",
+                "isAnswer": true
+            },{
+                "value": 2,
+                "text": "1 to 3",
+                "isAnswer": false
+            },{
+                "value": 3,
+                "text": "1 to 4",
+                "isAnswer": false
+            },{
+                "value": 4,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        },
+        {
+            "id": 11,
+            "type": "single_choice",
+            "isRequired": true,
+            "hasPicture": true,
+            "pictureURL": "/img/vlat/vlat12.png",
+            "title": "There is a negative relationship between the height and the weight of the 85 males.",
+            "choices": [{
+                "value": 0,
+                "text": "True",
+                "isAnswer": false
+            },{
+                "value": 1,
+                "text": "False",
+                "isAnswer": true
+            },{
+                "value": 2,
+                "text": "Omit",
+                "isAnswer": false
+            }]
+        }
+    ],
+    "demographic": [
+        {
+            "id": 0,
+            "type": "demographic",
+            "isRequired": true,
+            "hasPicture": false,
+            "pictureURL": "",
+            "title": ""
+        }
+    ]
+}

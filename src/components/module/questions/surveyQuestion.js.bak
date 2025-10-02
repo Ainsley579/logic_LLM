@@ -1,0 +1,236 @@
+import React, {useEffect, useState} from "react";
+import { Row, Col, Image, Typography, Checkbox, Space, Button, message, Input, Divider, Radio, Form } from 'antd';
+
+export function SurveyQuestion ({currentPhrase, question, updateAnswer, ifLast}){
+    const [messageApi, contextHolder] = message.useMessage();
+    const [answer, setAnswer] = useState(null);
+    const [Q2answer, setQ2Answer] = useState(null);
+    const [unselect, setUnselect] = useState([]);
+    const [textAreaVal1, setTextAreaVal1] = useState("");
+    const [textAreaVal2, setTextAreaVal2] = useState("");
+    const [textAreaVal3, setTextAreaVal3] = useState("");
+    const [textAreaValSelection, setTextAreaValSelection] = useState("");
+
+    const [form] = Form.useForm();
+
+    const onMultiSelectionChange = (e) => {
+        console.log('radio checked', e);
+        setAnswer(e);
+    };
+
+    const onQ2Change = (e) => {
+        //console.log('radio checked', e.target.value);
+        setQ2Answer(e.target.value);
+    };
+
+    const onTextAreaChange1 = (t) => {
+        setTextAreaVal1(t.target.textContent);
+    };
+
+    const onTextAreaChange2 = (t) => {
+        setTextAreaVal2(t.target.textContent);
+    };
+
+    const onTextAreaChange3 = (t) => {
+        setTextAreaVal3(t.target.textContent);
+    };
+
+    const onTextAreaChangeSelection = (t) => {
+        setTextAreaValSelection(t.target.textContent);
+    };
+
+    const ifIllegalSelect = (answer, choices) => {
+        const val = choices.filter(e=>e.text === "None of the above")[0].value;
+        return(answer.includes(val));
+    };
+
+    const onFormFinish = (values) => {
+        console.log('Success:', values);
+        //props.updateStudy(values, props.question);
+        //form.resetFields();
+    };
+
+    const onFormFinishFailed = (errorInfo) => {
+        console.log('Failed:', errorInfo);
+    };
+
+    const onFinish = () => {
+        const qlength = question.choices.length;
+        const qIDs = question.choices.filter(e=>e.text !== "None of the above").map((e,i)=>i);
+        const textTakeAway = [textAreaVal1, textAreaVal2, textAreaVal3];
+
+        if(answer.length <= qlength){
+            if(answer.length === 1 && question.choices[answer[0]].text === "None of the above"){
+                console.log("None of the above");
+                setUnselect(answer);
+            }else if(ifIllegalSelect(answer, question.choices)){
+                message.error('Please do not both select "None of the above" and other options!');
+            }else{
+                console.log(ifIllegalSelect(answer, question.choices));
+                const difference = qIDs.filter(x => !answer.includes(x));
+                //console.log(difference);
+                setUnselect(difference);
+            }
+        }
+        /*answer === null ? messageApi.info('Please choose an answer!')
+            : updateAnswer(answer, question, currentPhrase);*/
+        console.log(answer);
+    };
+
+    useEffect(()=>{
+        setAnswer(null);
+    }, [question]);
+
+    const { Title, Paragraph, Text, Link } = Typography;
+    const { TextArea } = Input;
+    
+    return(
+        <div
+            style={{
+                padding: 15,
+                //maxHeight: 1080,
+                overflow: "scroll"
+            }}
+        >
+        {contextHolder}
+            <Row>
+                <Col span={24}>
+                    <Image
+                        width={800}
+                        src={process.env.PUBLIC_URL+question.pictureURL}
+                        preview={false}
+                    />
+                </Col>
+            </Row>
+            <Divider style={{
+                marginTop: 0,
+                marginBottom: 0,
+                fontSize: 12
+            }}>Scroll to see all questions</Divider>
+            <div style={{
+                marginTop: 10,
+                maxHeight: 380,
+                overflow: "scroll"
+            }}>
+            <Row>
+                <Col span={24}>
+                    <Title level={5}>Q1. {question.title}</Title>
+                </Col>
+            </Row>
+
+            <Row>
+                <Checkbox.Group onChange={onMultiSelectionChange} value={answer}>
+                    <Space direction="vertical">
+                        {question.choices.map((e,i)=><Checkbox key={e.value} value={e.value}>
+                            <b>({i+1})</b> {e.text}
+                        </Checkbox>)}
+                    </Space>
+                </Checkbox.Group>
+            </Row>
+
+            <Row>
+                <Col span={24}>
+                    <Title level={5} style={{marginTop: 15}}>Q2. Reasons about the unselected options (Will dynamically update based on your selections above):</Title>
+                </Col>
+                {unselect.length>0 && unselect.map((e,i)=>
+                <div key={"div-"+i} style={{marginLeft: 10}}>
+                    {question.choices[e].text === "None of the above" &&
+                    <Space size="small" direction="vertical" key={"coltitle-"+i}>
+                    <Text key={"textarea-"+i}>Q2.{i+1}. Please explain why you think none of the takeaways provided are true</Text>
+                    <TextArea 
+                        style={{marginBottom: 5, width: 900}}
+                        showCount 
+                        rows={1}
+                        maxLength={500} 
+                        onChange={onTextAreaChangeSelection} 
+                        placeholder="Please explain why you think none of the takeaways provided are true" 
+                        />
+                    </Space>
+                    }
+
+                    {question.choices[e].text !== "None of the above" &&
+                    <Space size="small" direction="vertical" key={"coltitle-"+i}>
+                    <Text key={"textarea-"+i}><b>Q2.{i+1}.</b> Why do you believe Takeaway <b>({e+1})</b> is not true? Please choose the MOST relevant option and provide a brief explanation if needed.</Text>
+                    <Radio.Group onChange={onQ2Change} value={Q2answer} key={"radiogroup-"+i} >
+                    <Space size="small" direction="vertical">
+                    <Radio value={0} key={"radioselection1"+i}>
+                            This may not be true due to data uncertainty
+                        </Radio>
+                        <Radio value={1} key={"radioselection2"+i}>
+                            The circle size pattern on the map suggests otherwise
+                        </Radio>
+                        <Radio value={1} key={"radioselection3"+i}>
+                        Based on my prior knowledge of this topic, this is not true
+                        </Radio>
+                    </Space>
+                    </Radio.Group>
+                    <TextArea 
+                        key={"textselection4"+i}
+                        style={{marginBottom: 5, marginTop: -5}}
+                        showCount 
+                        rows={1}
+                        maxLength={500} 
+                        onChange={onTextAreaChangeSelection} 
+                        placeholder="Please explain why you think none of the takeaways provided are true" 
+                        />
+                    </Space>
+                    }
+                </div>
+                )}
+                {unselect.length === 0 && <Text strong>You have selected </Text>}
+            </Row>
+
+            <Row>
+                <Col span={24}>
+                    <Title level={5} style={{marginTop: 10}}>Q3. Please provide any additional takeaways about [{question.attribute}] in the US (optional, add up to 3).</Title>
+                </Col>
+                <Col span={24}>
+                    <Row>
+                        <Col span={24} style={{marginBottom: 2}}>Takeaway-{1}</Col>
+                        <Col span={24}>
+                        <TextArea 
+                        style={{marginBottom: 5}}
+                        showCount 
+                        rows={1}
+                        maxLength={500} 
+                        onChange={onTextAreaChange1} 
+                        placeholder="Write your own takeaway here (optional)" 
+                        />
+                        </Col>
+
+                        <Col span={24} style={{marginBottom: 2}}>Takeaway-{2}</Col>
+                        <Col span={24}>
+                        <TextArea 
+                        style={{marginBottom: 5}}
+                        showCount 
+                        rows={1}
+                        maxLength={500} 
+                        onChange={onTextAreaChange2} 
+                        placeholder="Write your own takeaway here (optional)" 
+                        />
+                        </Col>
+
+                        <Col span={24} style={{marginBottom: 2}}>Takeaway-{3}</Col>
+                        <Col span={24}>
+                        <TextArea 
+                        style={{marginBottom: 5}}
+                        showCount 
+                        rows={1}
+                        maxLength={500} 
+                        onChange={onTextAreaChange3} 
+                        placeholder="Write your own takeaway here (optional)" 
+                        />
+                        </Col>
+                    </Row>
+                </Col>
+            </Row>
+
+            <Row style={{marginTop: 15}}>
+                {ifLast ? <Button type="primary" onClick={onFinish}>Next Section</Button> :
+                    <Button type="primary" onClick={onFinish}>Next Question</Button>
+                }
+            </Row>
+            </div>
+        </div>
+    );
+}
