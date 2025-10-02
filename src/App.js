@@ -48,7 +48,7 @@ function App() {
     //setGroup(2); // set back to groupNum in real study
     //setBlock(1);
     /** Real study use */
-    axios.get('https://demo.vaderlab.org/textmap_services/reg_participant')
+    axios.get('http://127.0.0.1:8622/reg_participant')
       .then(response => {
         //console.log("reg_participant", response);
         const groupNum = response.data.groupNum;
@@ -152,7 +152,7 @@ function App() {
   };
 
   const storeResult = (result) => {
-    axios.post('https://demo.vaderlab.org/textmap_services/store_result', result)
+    axios.post('http://127.0.0.1:8622/store_result', result)
       .then(response => {
         console.log(response);
       })

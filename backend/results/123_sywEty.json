@@ -1,0 +1,163 @@
+{
+    "prolificID": "123",
+    "UID": "sywEty",
+    "group": 1,
+    "block": 2,
+    "exptResult": [
+        {
+            "anwser": {
+                "Fair": 3,
+                "Error-free": 3,
+                "Balanced": 3,
+                "Trustworthy": 3,
+                "Correct": 3,
+                "Objective": 3,
+                "Honest": 3,
+                "Credible": 3,
+                "Accurate": 3,
+                "Reliable": 3,
+                "Reputable": 3,
+                "Authentic": 3
+            },
+            "question": {
+                "id": 2,
+                "type": "slides",
+                "block": 2,
+                "data": "C9",
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/C9.png"
+            }
+        },
+        {
+            "anwser": {
+                "Fair": 3,
+                "Error-free": 4,
+                "Balanced": 5,
+                "Trustworthy": 4,
+                "Correct": 5,
+                "Objective": 4,
+                "Honest": 5,
+                "Credible": 5,
+                "Accurate": 6,
+                "Reliable": 7,
+                "Reputable": 6,
+                "Authentic": 5
+            },
+            "question": {
+                "id": 0,
+                "type": "slides",
+                "block": 2,
+                "data": "HE13",
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/HE13.png"
+            }
+        },
+        {
+            "anwser": {
+                "Fair": 3,
+                "Error-free": 7,
+                "Balanced": 4,
+                "Trustworthy": 6,
+                "Correct": 6,
+                "Objective": 5,
+                "Honest": 4,
+                "Credible": 4,
+                "Accurate": 5,
+                "Reliable": 4,
+                "Reputable": 6,
+                "Authentic": 5
+            },
+            "question": {
+                "id": 3,
+                "type": "slides",
+                "block": 2,
+                "data": "EC10",
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/EC10.png"
+            }
+        },
+        {
+            "anwser": {
+                "Fair": 3,
+                "Error-free": 5,
+                "Balanced": 6,
+                "Trustworthy": 6,
+                "Correct": 3,
+                "Objective": 3,
+                "Honest": 6,
+                "Credible": 5,
+                "Accurate": 5,
+                "Reliable": 7,
+                "Reputable": 4,
+                "Authentic": 2
+            },
+            "question": {
+                "id": 1,
+                "type": "slides",
+                "block": 2,
+                "data": "EN8",
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/EN8.png"
+            }
+        },
+        {
+            "anwser": {
+                "Fair": 4,
+                "Error-free": 6,
+                "Balanced": 5,
+                "Trustworthy": 5,
+                "Correct": 5,
+                "Objective": 5,
+                "Honest": 5,
+                "Credible": 5,
+                "Accurate": 5,
+                "Reliable": 5,
+                "Reputable": 5,
+                "Authentic": 5
+            },
+            "question": {
+                "id": 4,
+                "type": "slides",
+                "block": 2,
+                "data": "HO5",
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/HO5.png"
+            }
+        },
+        {
+            "anwser": {
+                "Fair": 2,
+                "Error-free": 5,
+                "Balanced": 3,
+                "Trustworthy": 2,
+                "Correct": 5,
+                "Objective": 3,
+                "Honest": 3,
+                "Credible": 6,
+                "Accurate": 5,
+                "Reliable": 5,
+                "Reputable": 4,
+                "Authentic": 3
+            },
+            "question": {
+                "id": 5,
+                "type": "slides",
+                "block": 2,
+                "data": "S6",
+                "isRequired": true,
+                "hasPicture": true,
+                "pictureURL": "/img/group1/S6.png"
+            }
+        }
+    ],
+    "demographicResult": {
+        "age": 2,
+        "gender": "other",
+        "eduLevel": "high school/GED"
+    }
+}

@@ -41,6 +41,9 @@ def hello_world():
 @app.route('/store_result', methods=["POST", "OPTIONS"])
 # get the top 1000 completions for the given prompt
 def store_result():
+    if request.method == "OPTIONS":
+        # 预检请求直接返回 200
+        return make_response("", 200)
     rawData = request.json
     print(rawData)
     with open('results/' + rawData['prolificID'] + '_' + rawData['UID'] + '.json', 'w', encoding='utf-8') as f:
