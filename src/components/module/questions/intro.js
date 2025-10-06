@@ -59,14 +59,8 @@ export function Intro (props) {
             <div style={{padding: 20}}>
                 <Typography>
                 <Title level={4}>
-                    Please study the following details about general map elements. When you have finished, please move to the next part of the study.
+                    In this session, you will be presented with two simple practice questions to help you get familiar with the types of questions you will encounter in the main study. You will be given two simple logical reasoning questions. First, you will select the option you believe is correct and submit your answer. After submission, an AI system will provide a recommendation and explanation. You can then decide whether to revise your answer. Finally, you will be asked to provide some subjective ratings about your experience and decision-making.
                 </Title>
-                <Image
-                        width={800}
-                        src={process.env.PUBLIC_URL+"/img/general_training/general_training_intro.png"}
-                        preview={false}
-                        style={{marginBottom: 0, marginTop: 20}}
-                />
                 <Title level={5}>
                 You must answer the next two questions correctly to continue. Failure to do so will result in the survey ending, and you will not be compensated for not paying attention.
                 </Title>
@@ -157,7 +151,7 @@ export function Intro (props) {
                         Main Map Study
                     </Title>
                     <Title level={5}>
-                    You will now be given 6 map-reading tasks. Answer each question to the best of your ability.
+                    You will now be given 4 logic reasoning tasks. Answer each question to the best of your ability.
                     </Title>
                 </Typography>
                 <Button type="primary" onClick={onClick} style={{marginTop: 20}}>

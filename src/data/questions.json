@@ -4,60 +4,66 @@
       "id": 0,
       "type": "single_choice",
       "isRequired": true,
-      "hasPicture": true,
-      "pictureURL": "/img/general_training/general_training_1.png",
-      "title": "What is highlighted in the figure?",
+      "title": "All dogs are animals. Max is a dog. Therefore, Max is:",
       "choices": [{
           "value": 0,
-          "text": "Legend",
-          "isAnswer": false
+          "text": "An animal",
+          "isAnswer": true
       },{
             "value": 1,
-            "text": "Map",
+            "text": "A plane",
             "isAnswer": false
       },{
             "value": 2,
-            "text": "Title",
-            "isAnswer": true
+            "text": "A rock",
+            "isAnswer": false
+      },{
+            "value": 3,
+            "text": "A car",
+            "isAnswer": false
       }]
   },{
       "id": 1,
       "type": "single_choice",
       "isRequired": true,
-      "hasPicture": true,
-      "pictureURL": "/img/general_training/general_training_2.png",
-      "title": "What is highlighted in the figure?",
+      "title": "If today is Monday, then tomorrow is Tuesday. Today is Monday. Therefore, tomorrow is:",
       "choices": [{
           "value": 0,
-          "text": "Legend",
-          "isAnswer": true
+          "text": "Friday",
+          "isAnswer": false
       },{
             "value": 1,
-            "text": "Map",
-            "isAnswer": false
+            "text": "Tuesday",
+            "isAnswer": true
       },{
             "value": 2,
-            "text": "Title",
+            "text": "Sunday",
+            "isAnswer": false
+      },{
+            "value": 3,
+            "text": "Saturday",
             "isAnswer": false
       }]
   },{
       "id": 2,
       "type": "single_choice",
       "isRequired": true,
-      "hasPicture": true,
-      "pictureURL": "/img/general_training/general_training_3.png",
-      "title": "What is highlighted in the figure?",
+      "title": "All cats are mammals. Whiskers is a cat. Therefore, Whiskers is:",
       "choices": [{
           "value": 0,
-          "text": "Legend",
+          "text": "A reptile",
           "isAnswer": false
       },{
             "value": 1,
-            "text": "Map",
-            "isAnswer": true
+            "text": "A bird",
+            "isAnswer": false
       },{
             "value": 2,
-            "text": "Title",
+            "text": "A mammal",
+            "isAnswer": true
+      },{
+            "value": 3,
+            "text": "A fish",
             "isAnswer": false
       }]
   }
@@ -66,25 +72,17 @@
     [
       {
         "id": 0,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": "E",
         "type": "slides",
-        "block": 1,
-        "data": "HE1",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/HE1.png"
-      },
-      {
-        "id": 1,
-        "type": "slides",
-        "block": 1,
-        "data": "EN2",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/EN2.png"
-      },
-      {
-        "id": 2,
-        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
         "block": 1,
         "data": "C15",
         "isRequired": true,
@@ -92,313 +90,338 @@
         "pictureURL": "/img/group1/C15.png"
       },
       {
-        "id": 3,
-        "type": "slides",
-        "block": 1,
-        "data": "EC16",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/EC16.png"
-      },
-      {
-        "id": 4,
-        "type": "slides",
-        "block": 1,
-        "data": "HO17",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/HO17.png"
-      },
-      {
-        "id": 5,
-        "type": "slides",
-        "block": 1,
-        "data": "S12",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/S12.png"
-      }
-    ],
-    [
-      {
-        "id": 0,
-        "type": "slides",
-        "block": 2,
-        "data": "HE13",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/HE13.png"
-      },
-      {
         "id": 1,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 2,
-        "data": "EN8",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/EN8.png"
-      },
-      {
-        "id": 2,
-        "type": "slides",
-        "block": 2,
-        "data": "C9",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/C9.png"
-      },
-      {
-        "id": 3,
-        "type": "slides",
-        "block": 2,
-        "data": "EC10",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/EC10.png"
-      },
-      {
-        "id": 4,
-        "type": "slides",
-        "block": 2,
-        "data": "HO5",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/HO5.png"
-      },
-      {
-        "id": 5,
-        "type": "slides",
-        "block": 2,
-        "data": "S6",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/S6.png"
-      }
-    ],
-    [
-      {
-        "id": 0,
-        "type": "slides",
-        "block": 3,
-        "data": "HE7",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/HE7.png"
-      },
-      {
-        "id": 1,
-        "type": "slides",
-        "block": 3,
-        "data": "EN14",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/EN14.png"
-      },
-      {
-        "id": 2,
-        "type": "slides",
-        "block": 3,
-        "data": "C3",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/C3.png"
-      },
-      {
-        "id": 3,
-        "type": "slides",
-        "block": 3,
-        "data": "EC4",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/EC4.png"
-      },
-      {
-        "id": 4,
-        "type": "slides",
-        "block": 3,
-        "data": "HO11",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/HO11.png"
-      },
-      {
-        "id": 5,
-        "type": "slides",
-        "block": 3,
-        "data": "S18",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group1/S18.png"
-      }
-    ]
-  ],
-  "survey_group_2": [
-      [
-      {
-        "id": 0,
-        "type": "slides",
-        "block": 1,
-        "data": "HE1",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/HE1.png"
-      },
-      {
-        "id": 1,
-        "type": "slides",
-        "block": 1,
-        "data": "EN2",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/EN2.png"
-      },
-      {
-        "id": 2,
-        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
         "block": 1,
         "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/C15.png"
+        "pictureURL": "/img/group1/C15.png"
       },
       {
-        "id": 3,
+        "id": 2,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
         "block": 1,
-        "data": "EC16",
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/EC16.png"
-      },
-      {
-        "id": 4,
-        "type": "slides",
-        "block": 1,
-        "data": "HO17",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/HO17.png"
-      },
-      {
-        "id": 5,
-        "type": "slides",
-        "block": 1,
-        "data": "S12",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/S12.png"
+        "pictureURL": "/img/group1/C15.png"
       }
     ],
     [
       {
         "id": 0,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 2,
-        "data": "HE13",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/HE13.png"
+        "pictureURL": "/img/group1/C15.png"
       },
       {
         "id": 1,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 2,
-        "data": "EN8",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/EN8.png"
+        "pictureURL": "/img/group1/C15.png"
       },
       {
         "id": 2,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 2,
-        "data": "C9",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/C9.png"
-      },
-      {
-        "id": 3,
-        "type": "slides",
-        "block": 2,
-        "data": "EC10",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/EC10.png"
-      },
-      {
-        "id": 4,
-        "type": "slides",
-        "block": 2,
-        "data": "HO5",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/HO5.png"
-      },
-      {
-        "id": 5,
-        "type": "slides",
-        "block": 2,
-        "data": "S6",
-        "isRequired": true,
-        "hasPicture": true,
-        "pictureURL": "/img/group2/S6.png"
+        "pictureURL": "/img/group1/C15.png"
       }
     ],
     [
       {
         "id": 0,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 3,
-        "data": "HE7",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/HE7.png"
+        "pictureURL": "/img/group1/C15.png"
       },
       {
         "id": 1,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 3,
-        "data": "EN14",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/EN14.png"
+        "pictureURL": "/img/group1/C15.png"
       },
       {
         "id": 2,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 3,
-        "data": "C3",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/C3.png"
+        "pictureURL": "/img/group1/C15.png"
+      }
+    ]
+  ],
+  "survey_group_2": [
+    [
+      {
+        "id": 0,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
+        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
       },
       {
-        "id": 3,
+        "id": 1,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 3,
-        "data": "EC4",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/EC4.png"
+        "pictureURL": "/img/group1/C15.png"
       },
       {
-        "id": 4,
+        "id": 2,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 3,
-        "data": "HO11",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/HO11.png"
+        "pictureURL": "/img/group1/C15.png"
+      }
+    ],
+    [
+      {
+        "id": 0,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
+        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
       },
       {
-        "id": 5,
+        "id": 1,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
         "type": "slides",
-        "block": 3,
-        "data": "S18",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
         "isRequired": true,
         "hasPicture": true,
-        "pictureURL": "/img/group2/S18.png"
+        "pictureURL": "/img/group1/C15.png"
+      },
+      {
+        "id": 2,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
+        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
+      }
+    ],[
+      {
+        "id": 0,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
+        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
+      },
+      {
+        "id": 1,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
+        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
+      },
+      {
+        "id": 2,
+        "query": "Editorial: The structure of the present school calendar was established to satisfy the requirements of early-twentieth-century agricultural life. In those days, farmers needed their children to have long breaks during which they could remain at home and help with the harvest. The contemporary school year is thus made up of periods of study interspersed with long breaks. But agricultural life no longer occupies most of our citizens, so we can now make changes that serve the interests of children. Therefore, long breaks should be removed from the school calendar.Q: Which one of the following is an assumption on which the editorial's argument depends?",
+        "a": "During long breaks children have a tendency to forget what they have learned.",
+        "b": "Children of farmers need to continue observing a school calendar made up of periods of study interspersed with long breaks.",
+        "c": "Long breaks in the school calendar should be replaced with breaks that are no longer than workers' average vacations.",
+        "d": "A change in the present school calendar that shortened breaks would serve the interests of agricultural life.",
+        "e": "A school calendar made up of periods of study without long breaks would serve the interests of children more than a school calendar with long breaks.",
+        "gold": 4,
+        "type": "slides",
+        "prediction": 4,
+        "explanation": "The reason is that the editorial argues for removing long breaks on the grounds that agricultural life no longer requires them, and thus changes should be made to better serve the interests of children. ",
+        "detail": "/",
+        "block": 1,
+        "data": "C15",
+        "isRequired": true,
+        "hasPicture": true,
+        "pictureURL": "/img/group1/C15.png"
       }
     ]
   ],

@@ -27,12 +27,12 @@ export function Initpage({setProlificID}) {
             <Typography>
                 <Title>Introduction</Title>
                 <Paragraph>
-                    Welcome to our study on <Text strong>Reading Symbol Maps.</Text>
-                    This study should take around 25 minutes to complete.
+                    Welcome to our study on <Text strong>Human-AI Collaborated Decision Making.</Text>
+                    This study should take around 20 minutes to complete.
                 </Paragraph>
 
                 <Paragraph>
-                    This study will ask you to answer questions and select/write your takeaways from reading maps.
+                    This study will ask you to answer questions without the help of AI. After you submit your answers, the AI will provide recommendations and reasoning, and you can decide whether to revise your answers.
                 </Paragraph>
 
                 <Title level={2}>When Finished...</Title>
@@ -77,30 +77,24 @@ export function Initpage({setProlificID}) {
                     <Title level={4} style={{marginTop: 1, marginBottom: 5}}>RESEARCHERS</Title>
                     <Paragraph>
                         {/*"REMOVED FOR ANONYMOUS REQUIREMENT"*/}
-                        Ross Maciejewski, Assistant Professor, Varun Srivastava, Graduate Research Associate, and Fan Lei, Graduate Research Associate
+                        Ross Maciejewski, Assistant Professor, Shiyi Liu, Graduate Research Associate, and Fan Lei, Graduate Research Associate
                     </Paragraph>
 
                     <Title level={4} style={{marginTop: 1, marginBottom: 5}}>STUDY PURPOSE</Title>
                     <Paragraph>
-                        This research aims to assess how inferences are made while reading maps that present diverse topics, visual variables, and data distributions. <Text underline strong>You will be given a list of statements about each map. Select the ones that you believe are true based on the data shown. You can also provide your detailed interpretations for each map.</Text>
+                        The purpose of this study is to examine how participants generate, detect, and respond to logical fallacies and logical errors in reasoning tasks. <Text underline strong>You will be given a set of logical reasoning questions, each with 4–5 answer options. First, you will select the option you believe is correct and submit your answer. After submission, an AI system will provide a recommendation and explanation. You can then decide whether to revise your answer. Finally, you will be asked to provide some subjective ratings about your experience and decision-making.</Text>
                     </Paragraph>
 
                     <Title level={4} style={{marginTop: 1, marginBottom: 5}}>DESCRIPTION OF RESEARCH STUDY</Title>
                     <Paragraph>
                         We will not ask your name or any other identifying information in this survey. For research
                         purposes, an anonymous numeric code will be assigned to your responses. We will destroy any
-                        personal information from the start, and it will be impossible to identify you. In this study,
-                        we will present you with a few bar charts and ask you to answer some questions directly related
-                        to the charts. We anticipate that this study will take approximately <Text underline strong>20-25
-                        minutes</Text>. Your participation is completely voluntary, and you may cease participation at
-                        any time.
+                        personal information from the start, and it will be impossible to identify you. We anticipate that this study will take approximately <Text underline strong>20-25 minutes</Text>. Your participation is completely voluntary, and you may cease participation at any time.
                     </Paragraph>
 
                     <Title level={4} style={{marginTop: 1, marginBottom: 5}}>INCLUSION CRITERIA</Title>
                     <Paragraph>
-                        In order to participate in this study, you must be between 18 and 75 years of age, have the
-                        ability to communicate in English, have average or corrected-to-average vision, and have manual
-                        dexterity sufficient to operate a computer mouse and keyboard.
+                        In order to participate in this study, you must be between 21 and 75 years of age, have the ability to communicate in English and have manual dexterity sufficient to operate a computer mouse and keyboard.
                     </Paragraph>
 
                     <Title level={4} style={{marginTop: 1, marginBottom: 5}}>RISKS</Title>
@@ -111,8 +105,8 @@ export function Initpage({setProlificID}) {
 
                     <Title level={4} style={{marginTop: 1, marginBottom: 5}}>BENEFITS</Title>
                     <Paragraph>
-                        You will also be compensated for your participation. We will compensate $4.00 upon successful
-                        completion of the survey. If you do not make it to the end of the survey, then you will not be
+                        You will also be compensated for your participation. We will compensate $5.00 upon successful
+                        completion of the survey. For each correct answer, including answers before AI's help and after AI's help, you will get extra $1.00 compensation. If you do not make it to the end of the survey, then you will not be
                         eligible for compensation. In order to be compensated properly, a keycode will be generated at
                         the end of the survey. You must copy-paste the code into Prolific.co to receive payment.
                     </Paragraph>
@@ -141,7 +135,7 @@ export function Initpage({setProlificID}) {
 
                 <Title level={4} style={{marginTop: 1, marginBottom: 5}}>VOLUNTARY CONSENT</Title>
                 <Paragraph> {/**"REMOVED FOR ANONYMOUS REQUIREMENT" */}
-                    If you have any questions concerning the research study, please contact principal investigator Dr. Ross Maciejewski at rmacieje@asu.edu and the research team member Varun Srivastava vsriva11@asu.edu. If you have any questions about your rights as a subject/participant in this research, or if you feel you have been placed at risk, you can contact the Chair of the Human Subjects Institutional Review Board, through the ASU Office of Research Integrity and Assurance, at (480) 965-6788.
+                    If you have any questions concerning the research study, please contact principal investigator Dr. Ross Maciejewski at rmacieje@asu.edu and the research team member Shiyi Liu, shiyiliu@asu.edu. If you have any questions about your rights as a subject/participant in this research, or if you feel you have been placed at risk, you can contact the Chair of the Human Subjects Institutional Review Board, through the ASU Office of Research Integrity and Assurance, at (480) 965-6788.
                 </Paragraph>
                 <Paragraph>By starting the study, you are consenting to participate in this study.</Paragraph>
             </Modal>

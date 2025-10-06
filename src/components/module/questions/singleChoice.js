@@ -45,13 +45,6 @@ export function SingleChoice (props){
                     <Text>Question:</Text>
                     <Text strong>{props.currentIndex+1}/{props.questionLen}</Text>
                 </Col>
-                <Col span={23}>
-                    <Image
-                        width={900}
-                        src={process.env.PUBLIC_URL+props.question.pictureURL}
-                        preview={false}
-                    />
-                </Col>
             </Row>
 
             <Row>
@@ -78,13 +71,13 @@ export function SingleChoice (props){
                 cancelText="No, I want to change my selection"
             >
                 {props.ifLast ? <Button type="primary" >Next Section</Button> :
-                    <Button type="primary" >Next Question</Button>
+                    <Button type="primary" >Submit</Button>
                 }
             </Popconfirm>}
             {props.currentPhrase === "vlat" &&
             <>
             {props.ifLast ? <Button onClick={onFinish} type="primary" >Next Section</Button> :
-                    <Button onClick={onFinish} type="primary" >Next Question</Button>
+                    <Button onClick={onFinish} type="primary" >Submit</Button>
             }
             </>
             }

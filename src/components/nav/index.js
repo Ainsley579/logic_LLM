@@ -6,7 +6,7 @@ export function NavBar () {
             <span className="logo" href="#"
                 style={{float: 'left'}}
             >
-                A Study on Reading Symbol Maps
+                A Study on Human-AI Collaborated Decision Making
             </span>
 
             <span style={{float: 'left', color: 'white', lineHeight: 4, marginLeft: 150}}>
