@@ -1,75 +1,171 @@
 import React, { useEffect, useState, useRef } from "react";
-import {
-  Row, Col, Typography, Radio, Button, message, Form
-} from "antd";
+import { Row, Col, Typography, Radio, Button, message } from "antd";
 
 export function Slides(props) {
   const [messageApi, contextHolder] = message.useMessage();
-  const [answer, setAnswer] = useState(null); // first answer
-  const [secondAnswer, setSecondAnswer] = useState(null); // post-AI answer
+
+  // 答案
+  const [answer, setAnswer] = useState(null);
+  const [secondAnswer, setSecondAnswer] = useState(null);
+
+  // 信心
+  const [firstConfidence, setFirstConfidence] = useState(null);
+  const [secondConfidence, setSecondConfidence] = useState(null);
+
+  // AI 评分
+  const [aiAccuracy, setAiAccuracy] = useState(null);
+  const [aiHelpfulness, setAiHelpfulness] = useState(null);
+  const [aiTrustworthiness, setAiTrustworthiness] = useState(null);
+
+  // 控制阶段
   const [showSuggestion, setShowSuggestion] = useState(false);
-  const [startTime, setStartTime] = useState(null); // ⏱️ start time
-  const [firstSubmitTime, setFirstSubmitTime] = useState(null); // ⏱️ pre-AI submit time
+  const [showFirstConf, setShowFirstConf] = useState(false);
+  const [showFinalConf, setShowFinalConf] = useState(false);
+  const [showAISurvey, setShowAISurvey] = useState(false);
 
-  const questionRef = useRef(null);
-  const [form] = Form.useForm();
+  // 按钮禁用状态
+  const [firstSubmitted, setFirstSubmitted] = useState(false);
+  const [firstConfSubmitted, setFirstConfSubmitted] = useState(false);
+  const [finalSubmitted, setFinalSubmitted] = useState(false);
+  const [finalConfSubmitted, setFinalConfSubmitted] = useState(false);
+  const [aiSurveySubmitted, setAiSurveySubmitted] = useState(false);
 
+  // 计时变量
+  const timeStartRef = useRef(null);
+  const timeFirstSubmitRef = useRef(null);
+  const timeConf1SubmitRef = useRef(null);
+  const timeFinalSubmitRef = useRef(null);
+  const timeConf2SubmitRef = useRef(null);
+
+  const { Text, Paragraph } = Typography;
+
+  // 每次加载新题目时重置状态
   useEffect(() => {
     setAnswer(null);
     setSecondAnswer(null);
+    setFirstConfidence(null);
+    setSecondConfidence(null);
+    setAiAccuracy(null);
+    setAiHelpfulness(null);
+    setAiTrustworthiness(null);
+
     setShowSuggestion(false);
-    setStartTime(Date.now()); // record question start time
-    setFirstSubmitTime(null);
+    setShowFirstConf(false);
+    setShowFinalConf(false);
+    setShowAISurvey(false);
+
+    setFirstSubmitted(false);
+    setFirstConfSubmitted(false);
+    setFinalSubmitted(false);
+    setFinalConfSubmitted(false);
+    setAiSurveySubmitted(false);
+
+    // 记录起始时间
+    timeStartRef.current = Date.now();
+
     window.scrollTo(0, 0);
   }, [props.question]);
 
-  const { Paragraph, Text } = Typography;
+  // ================== 阶段逻辑 ==================
 
-  // Handler for submitting the first answer (pre-AI)
   const handleFirstSubmit = () => {
     if (!answer) {
       message.error("Please select an answer before submitting!");
       return;
     }
-    const now = Date.now();
-    setFirstSubmitTime(now);
-    const firstStageTime = (now - startTime) / 1000;
-    console.log(`🕒 Time before AI suggestion: ${firstStageTime}s`);
-    setShowSuggestion(true);
+    timeFirstSubmitRef.current = Date.now();
+    setShowFirstConf(true);
+    setFirstSubmitted(true);
   };
 
-  // Handler for submitting the second/final answer (post-AI)
-  const handleFinalSubmit = () => {
-    if (!secondAnswer) {
-      message.error("Please select a final answer before submitting!");
+  const handleFirstConfSubmit = () => {
+    if (!firstConfidence) {
+      message.error("Please select your confidence level!");
       return;
     }
-    const endTime = Date.now();
-    const totalTime = (endTime - startTime) / 1000;
-    const postAITime = firstSubmitTime ? (endTime - firstSubmitTime) / 1000 : null;
+    timeConf1SubmitRef.current = Date.now();
+    setShowSuggestion(true);
+    setFirstConfSubmitted(true);
+  };
 
-    console.log(`✅ Total time for this question: ${totalTime}s`);
-    console.log(`🤖 Time after AI suggestion: ${postAITime}s`);
+  const handleFinalSubmit = () => {
+    if (!secondAnswer) {
+      message.error("Please select your final answer before submitting!");
+      return;
+    }
+    timeFinalSubmitRef.current = Date.now();
+    setShowFinalConf(true);
+    setFinalSubmitted(true);
+  };
 
-    // Call updateAnswer with both answers and timing info
+  const handleSecondConfSubmit = () => {
+    if (!secondConfidence) {
+      message.error("Please select your confidence level!");
+      return;
+    }
+    timeConf2SubmitRef.current = Date.now();
+    setShowAISurvey(true);
+    setFinalConfSubmitted(true);
+  };
+
+  const handleAISurveySubmit = () => {
+    if (!aiAccuracy || !aiHelpfulness || !aiTrustworthiness) {
+      message.error("Please rate all three AI metrics!");
+      return;
+    }
+    const timeNow = Date.now();
+
+    // 计算时间差（秒）
+    const time_firstAnswer = (timeFirstSubmitRef.current - timeStartRef.current) / 1000;
+    const time_firstConfidence = (timeConf1SubmitRef.current - timeFirstSubmitRef.current) / 1000;
+    const time_finalAnswer = (timeFinalSubmitRef.current - timeConf1SubmitRef.current) / 1000;
+    const time_finalConfidence = (timeConf2SubmitRef.current - timeFinalSubmitRef.current) / 1000;
+    const time_aiSurvey = (timeNow - timeConf2SubmitRef.current) / 1000;
+
     props.updateAnswer(
       {
         firstAnswer: answer,
+        firstConfidence,
         finalAnswer: secondAnswer,
-        totalTime: totalTime,
-        postAITime: postAITime
+        finalConfidence: secondConfidence,
+        aiAccuracy,
+        aiHelpfulness,
+        aiTrustworthiness,
+        time_firstAnswer,
+        time_firstConfidence,
+        time_finalAnswer,
+        time_finalConfidence,
+        time_aiSurvey,
       },
       props.question,
       props.currentPhrase
     );
 
-    setShowSuggestion(false);
-    setAnswer(null);
-    setSecondAnswer(null);
-    window.scrollTo(0, 0);
+    message.success("Response submitted!");
+    setAiSurveySubmitted(true);
   };
 
-  // Render answer options as radio buttons
+  // ================== 可复用组件 ==================
+
+  const renderScale = (value, setter, labelText) => (
+    <div style={{ marginTop: 4 }}>
+      <Text type="secondary">{labelText}</Text>
+      <div style={{ marginTop: 6 }}>
+        <Radio.Group
+          value={value}
+          onChange={(e) => setter(e.target.value)}
+          style={{ marginTop: 4 }}
+        >
+          {[1, 2, 3, 4, 5, 6, 7].map((v) => (
+            <Radio.Button key={v} value={v} style={{ marginRight: 6 }}>
+              {v}
+            </Radio.Button>
+          ))}
+        </Radio.Group>
+      </div>
+    </div>
+  );
+
   const renderRadioChoices = (selectedValue, onChangeHandler, disabled = false) => (
     <>
       {Object.entries(props.question)
@@ -88,6 +184,7 @@ export function Slides(props) {
     </>
   );
 
+  // ================== 主体渲染 ==================
   return (
     <div style={{ padding: 15, overflow: "scroll" }}>
       {contextHolder}
@@ -101,49 +198,114 @@ export function Slides(props) {
         <Col span={22}>
           <Text>{props.question.query}</Text>
           <div style={{ marginTop: 15 }}>
-            {/* First set of choices */}
-            {renderRadioChoices(answer, setAnswer, showSuggestion)}
-            <Button
-              type="primary"
-              style={{ marginTop: 10 }}
-              onClick={handleFirstSubmit}
-              disabled={showSuggestion}
-            >
-              Submit
-            </Button>
+            {/* --- 第一次作答 --- */}
+            {renderRadioChoices(answer, setAnswer, showFirstConf || showSuggestion)}
+            {!showFirstConf && !showSuggestion && (
+              <Button
+                type="primary"
+                style={{ marginTop: 10 }}
+                onClick={handleFirstSubmit}
+                disabled={firstSubmitted}
+              >
+                Submit
+              </Button>
+            )}
 
-            {/* AI suggestion and second set of choices */}
-            {showSuggestion && (
-              <>
-                <div
-                  style={{
-                    marginTop: 15,
-                    padding: 10,
-                    background: "#f6f6f6",
-                    borderRadius: 5,
-                    border: "1px solid #d9d9d9",
-                  }}
+            {/* --- 第一次信心评分 --- */}
+            {showFirstConf && (
+              <div style={{ marginTop: 15 }}>
+                <Text strong>How confident are you in your answer?</Text>
+                {renderScale(firstConfidence, setFirstConfidence, "1 = Very Low, 7 = Very High")}
+                <Button
+                  type="primary"
+                  style={{ marginTop: 10 }}
+                  onClick={handleFirstConfSubmit}
+                  disabled={firstConfSubmitted}
                 >
-                  <Text strong>AI Suggestion:</Text>
+                  Submit Confidence
+                </Button>
+              </div>
+            )}
+
+            {/* --- AI 建议 --- */}
+            {showSuggestion && (
+              <div
+                style={{
+                  marginTop: 20,
+                  padding: 10,
+                  background: "#f6f6f6",
+                  borderRadius: 5,
+                  border: "1px solid #d9d9d9",
+                }}
+              >
+                <Text strong>AI Suggestion:</Text>
+                <Paragraph style={{ marginTop: 5 }}>
                   The answer is <Text strong>{props.question.gold}</Text>.
-                  <Paragraph style={{ marginTop: 5 }}>
-                    {props.question.explanation}
-                  </Paragraph>
+                  <br />
+                  {props.question.explanation}
+                </Paragraph>
+              </div>
+            )}
+
+            {/* --- 第二次作答 --- */}
+            {showSuggestion && (
+              <div style={{ marginTop: 20 }}>
+                <Text strong>Now, please select your final answer:</Text>
+                {renderRadioChoices(secondAnswer, setSecondAnswer)}
+                {!showFinalConf && (
+                  <Button
+                    type="primary"
+                    style={{ marginTop: 10 }}
+                    onClick={handleFinalSubmit}
+                    disabled={finalSubmitted}
+                  >
+                    Submit Final Answer
+                  </Button>
+                )}
+              </div>
+            )}
+
+            {/* --- 第二次信心评分 --- */}
+            {showFinalConf && (
+              <div style={{ marginTop: 15 }}>
+                <Text strong>How confident are you in your final answer?</Text>
+                {renderScale(secondConfidence, setSecondConfidence, "1 = Very Low, 7 = Very High")}
+                <Button
+                  type="primary"
+                  style={{ marginTop: 10 }}
+                  onClick={handleSecondConfSubmit}
+                  disabled={finalConfSubmitted}
+                >
+                  Submit Confidence
+                </Button>
+              </div>
+            )}
+
+            {/* --- AI 主观问卷 --- */}
+            {showAISurvey && (
+              <div style={{ marginTop: 20 }}>
+                <Text strong>Please rate the AI’s performance:</Text>
+                <div style={{ marginTop: 10 }}>
+                  <Text>How accurate do you think the AI was?</Text>
+                  {renderScale(aiAccuracy, setAiAccuracy, "1 = Not Accurate, 7 = Extremely Accurate")}
                 </div>
-                <div style={{ marginTop: 20 }}>
-                  <Text strong>Now, please select your final answer:</Text>
-                  <div style={{ marginTop: 15 }}>
-                    {renderRadioChoices(secondAnswer, setSecondAnswer)}
-                    <Button
-                      type="primary"
-                      style={{ marginTop: 10 }}
-                      onClick={handleFinalSubmit}
-                    >
-                      Submit Final Answer
-                    </Button>
-                  </div>
+                <div style={{ marginTop: 10 }}>
+                  <Text>How helpful do you think the AI was?</Text>
+                  {renderScale(aiHelpfulness, setAiHelpfulness, "1 = Not Helpful, 7 = Extremely Helpful")}
                 </div>
-              </>
+                <div style={{ marginTop: 10 }}>
+                  <Text>How trustworthy do you think the AI was?</Text>
+                  {renderScale(aiTrustworthiness, setAiTrustworthiness, "1 = Not Trustworthy, 7 = Completely Trustworthy")}
+                </div>
+                <Button
+                  type="primary"
+                  style={{ marginTop: 15 }}
+                  onClick={handleAISurveySubmit}
+                  disabled={aiSurveySubmitted}
+                >
+                  Submit All
+                </Button>
+              </div>
             )}
           </div>
         </Col>
