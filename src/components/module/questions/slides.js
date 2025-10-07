@@ -240,7 +240,7 @@ export function Slides(props) {
               >
                 <Text strong>AI Suggestion:</Text>
                 <Paragraph style={{ marginTop: 5 }}>
-                  The answer is <Text strong>{props.question.gold}</Text>.
+                  The answer is <Text strong>{props.question.prediction}</Text>.
                   <br />
                   {props.question.explanation}
                 </Paragraph>
